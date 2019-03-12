@@ -1,0 +1,69 @@
+		table#oferte,table#oferte tr{
+			display:block;
+            border:none;
+		}
+        table#oferte th,td{ 
+            display:block;
+	        border:1px solid black;
+	        padding:0.3em;
+            text-align:center;
+        }
+        table#oferte tr{
+             margin:10px;
+        }
+		table#oferte td{
+            border-collapse:separate;
+            border-spacing:15px;
+            box-sizing:border-box;
+			padding:0.2em;
+			box-sizing:border-box; 
+		}
+        table#oferte tbody td:nth-child(1){
+            background:linear-gradient(white,skyblue);
+            border-top-left-radius:15px;
+            border-top-right-radius:15px;
+            font-weight:bold;
+            font-size:10px;
+            color:red;
+            text-transform:uppercase;
+            text-align:center;
+        }
+		table#oferte thead, tfoot{
+			display:none;
+		}
+		table#oferte tbody td:nth-child(2)::before{
+			content:"Nume: ";
+		}
+		table#oferte tbody td:nth-child(3)::before{
+			content:"Detalii: ";
+		}
+		table#oferte tbody td:nth-child(4)::before{
+			content:"Pret: ";
+		}
+		
+		table#oferte td{
+			border-bottom:none;
+			border-top:none;
+			float:left;
+			width:80%;
+			padding-left:2%;
+			padding-right:2%;
+		}
+		table#oferte td::before{
+			float:left;
+			width:35%;
+			background:lightblue;
+			font-weight:bold;
+			margin-right:0.5em;
+			padding:0.1em;
+			line-height:100%;
+		}
+		table#oferte td:last-child{
+			border-bottom:1px dashed grey;
+		}
+		table#oferte tr:first-child  td:first-child{
+			border-top:1px solid black;
+		}
+		table#oferte tr:last-child td:last-child{
+			border-bottom:1px solid black;
+		}

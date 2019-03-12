@@ -1,0 +1,46 @@
+@media only screen and (max-width: 760px) {
+	.candles{
+		position: static;
+		height:120%;
+		display: flex;
+		justify-content: center;
+		z-index:0;
+		padding: 0 0
+	}
+}
+
+
+img#deluxe:hover {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -15px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
+}
+
+figure img{
+	transform: scale(1);
+	transition: 4s ease-in-out;
+}
+
+figure:hover img {
+	transform: scale(1.1);
+}
+
+.candles{
+  position:absolute;
+  width:74%;
+  height:20%;
+  display:block;
+  background:#000 url(./Galery/candles.png) repeat top center;
+  z-index:0;
+}
+
+.map{
+	z-index:0;
+	float: right;
+	margin: 0 0 10px 10px;
+	border-radius: 50%;
+	max-width: 10em;
+	height:auto;
+	box-shadow: 0 0.2em 0.4em 0 rgba(0, 0, 0, 0.1);
+	background:#000 url(./Galery/harta.png) repeat top center;
+}

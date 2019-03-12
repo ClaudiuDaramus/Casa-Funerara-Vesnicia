@@ -1,0 +1,40 @@
+table#oferte{
+        border:none;
+}
+table#oferte td, table#oferte th{
+	border: 1px solid black;
+	padding: 1em;
+}
+table#oferte thead, tfoot td{
+       background:Lavender;
+}
+
+table#oferte tbody td{
+       background:Lavender;
+}
+table#oferte{
+	border-spacing:0;
+	border-collapse:collapse;
+	box-sizing:border-box;
+}
+table#oferte>tbody tr {
+	counter-increment: nra; 
+}
+
+table#oferte tfoot td::after{
+	content: " " counter(nra);
+}
+#oferte thead tr{
+                background:linear-gradient(white,skyblue);
+                font-weight:bold;
+                font-size:16px;
+                color:red;
+                text-transform:uppercase;
+                text-align:center;
+                }
+#oferte thead th:nth-child(1){
+        border-top-left-radius:20px;
+}
+#oferte thead th:last-child{
+        border-top-right-radius:20px;
+}
